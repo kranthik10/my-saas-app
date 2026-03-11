@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: #3498db;
+}
+
+.btn-success {
+  background-color: #2ecc71;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+}
+
+.card {
+  background: #fff;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.form-group {
+  margin: 1rem 0;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav li {
+  margin-left: 1rem;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.btn-google {
+  background-color: #dd4b39;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.btn-google:hover {
+  background-color: #c23321;
+}
+
+.dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.user-info {
+  margin-bottom: 2rem;
+}
+
+.video-process {
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 1rem;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #333;
+  color: white;
+}
+
+.video-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.video-table th, .video-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.status.processing {
+  background: #f0ad4e;
+  color: white;
+}
+
+.status.completed {
+  background: #5cb85c;
+  color: white;
+}
+
+.status.failed {
+  background: #d9534f;
+  color: white;
+}
+
+.subscription {
+  margin: 2rem 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.pricing-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+  text-align: center;
+  background: white;
+}
+
+.pricing-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #2c3e50;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.pricing-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.current-plan {
+  background: #3498db;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-top: 1rem;
+}

@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongo:27017/saas-videos
+      - JWT_SECRET=your_jwt_secret_key_here
+      - OPENAI_API_KEY=your_openai_api_key_here
+      - STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key_here
+      - STRIPE_SECRET_KEY=your_stripe_secret_key_here
+      - STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret_here
+    depends_on:
+      - mongo
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:5
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongo_data:
